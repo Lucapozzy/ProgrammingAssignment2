@@ -53,7 +53,7 @@ makeCacheMatrix <- function(x = numeric()) {
     # otherwise get the matrix, caclulate the inverse and store it in
     # the cache
     data <- y$getMatrix()
-    inverse <- solve(data)
+    inverse <- solve(data) 
     y$cacheInverse(inverse)
     
     # return the inverse
